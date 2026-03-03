@@ -10,6 +10,7 @@ class Strategy:
         self.price_history = []
         self.lookback_period = 5
 
+    def step(self, current_prices: pd.Series) -> pd.Series:
         """
         Core strategy logic. 
         This function is called at every timestamp by the BacktestEngine.
